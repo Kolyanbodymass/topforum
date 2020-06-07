@@ -1,0 +1,25 @@
+.menu
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    width: 350px
+    &__item
+        font-size: 15px
+        font-weight: 300
+        color: #ffffff
+        cursor: pointer
+        position: relative
+        &:after
+            content: ""
+            background-color: #ffffff
+            width: 1px
+            height: 35px
+            opacity: 0.1
+            display: block
+            position: absolute
+            right: -19px
+            bottom: 50%
+            transform: translateY(50%)
+        &:last-child::after
+            content: ''
+            display: none
