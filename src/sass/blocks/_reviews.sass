@@ -1,0 +1,65 @@
+.reviews
+    padding: 54px 0 61px
+    background-color: rgba(232, 216, 182, 0.3)
+    &__title
+        margin-bottom: 40px
+    &__slide
+        display: flex
+        justify-content: center
+        align-items: end
+    &__avatar
+        border-radius: 100%
+        width: 121px
+        height: 121px
+        img
+            width: 100%
+            border-radius: 100%
+    &__text-wrapper
+        width: 400px
+        background-color: #fff
+        padding: 26px 27px 31px 34px
+        position: relative
+        margin-left: 29px
+        &::before
+            content: ''
+            position: absolute
+            border: 20px solid transparent
+            border-right: 15px solid #fff
+            left: -34px
+            top: 54px
+    &__name
+        font-size: 17px
+        font-weight: 500
+        color: #323232
+        margin-bottom: 11px
+    &__date
+        width: 119px
+        height: 29px
+        line-height: 29px
+        text-align: center
+        font-size: 9px
+        font-weight: 300
+        color: #ffffff
+        background-color: #BBBBBD
+        margin-bottom: 11px
+    &__text
+        font-size: 14px
+        line-height: 22px
+        font-weight: 300
+        color: #323232
+    &__slider-inner
+        position: relative
+        width: 1140px
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+    &__slider-prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -30px
+    &__slider-next
+        position: absolute
+        bottom: 50%
+        transform: translateY(50%)
+        right: -30px
